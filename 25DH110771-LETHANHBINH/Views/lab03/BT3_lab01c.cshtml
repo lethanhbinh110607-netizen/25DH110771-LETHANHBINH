@@ -1,0 +1,246 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Bài tập 3 - Layout bằng thẻ Div</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            gap: 30px;
+            padding: 30px;
+            justify-content: center;
+        }
+
+        
+        .layout-box {
+            width: 250px;
+            height: 250px;
+            border: 2px solid #5b677a; 
+            display: flex;
+            flex-direction: column; 
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        
+        .row {
+            display: flex;
+            width: 100%;
+        }
+
+        .flex-1 {
+            flex: 1;
+        }
+        
+
+        
+        .Để giải quyết Bài 3, phương pháp hiệu quả và hiện đại nhất là sử dụng thẻ `<div > ` kết hợp với thuộc tính **CSS Flexbox** để chia cột và hàng.
+
+        Dưới đây là mã nguồn HTML và CSS hoàn chỉnh cho cả 6 cấu trúc trang web được yêu cầu. Bạn có thể sao chép toàn bộ đoạn mã này vào một file `index.html` và mở trên trình duyệt để xem kết quả.
+
+        ```html
+        <!DOCTYPE html >
+        <html lang="vi" >
+        <head >
+        <meta charset="UTF-8" >
+        <title > Bài Tập 3 - Layout HTML/CSS</title >
+        <style >
+        
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px;
+        }
+
+        
+        .container {
+            border: 2px solid #5a6a8c;
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        
+        .header {
+            height: 40px;
+            border-bottom: 2px solid #5a6a8c;
+        }
+
+        .footer {
+            height: 40px;
+            border-top: 2px solid #5a6a8c;
+        }
+
+        .nav-bar {
+            height: 25px;
+            border-bottom: 2px solid #5a6a8c;
+        }
+
+        
+        .flex-row {
+            display: flex;
+            min-height: 180px;
+            flex: 1;
+        }
+
+        
+        .flex-col {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        
+        .sidebar {
+            width: 30%;
+        }
+
+        .sidebar-left {
+            border-right: 2px solid #5a6a8c;
+        }
+
+        .sidebar-right {
+            border-left: 2px solid #5a6a8c;
+        }
+
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        
+        .sub-header {
+            height: 30px;
+            border-bottom: 2px solid #5a6a8c;
+            width: 100%;
+        }
+
+        
+        .circle {
+            background: linear-gradient(135deg, #d3e18a, #a6b553);
+            color: white;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 22px;
+            border: 3px solid white;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div>
+        <h3>Hình 1</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="flex-row">
+                <div class="sidebar sidebar-left"></div>
+                <div class="main-content">
+                    <div class="circle">1</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Hình 2</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="flex-row">
+                <div class="main-content">
+                    <div class="circle">2</div>
+                </div>
+                <div class="sidebar sidebar-right"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div>
+        <h3>Hình 3</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="flex-row">
+                <div class="sidebar sidebar-left"></div>
+                <div class="main-content">
+                    <div class="circle">3</div>
+                </div>
+                <div class="sidebar sidebar-right"></div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+    
+    <div>
+        <h3>Hình 4</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="nav-bar"></div>
+            <div class="flex-row">
+                <div class="sidebar sidebar-left"></div>
+                <div class="main-content">
+                    <div class="circle">4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <h3>Hình 5</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="flex-row">
+                <div class="flex-col">
+                    <div class="sub-header"></div>
+                    <div class="main-content">
+                        <div class="circle">5</div>
+                    </div>
+                </div>
+                <div class="sidebar sidebar-right"></div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div>
+        <h3>Hình 6</h3>
+        <div class="container">
+            <div class="header"></div>
+            <div class="flex-row">
+                <div class="sidebar sidebar-left"></div>
+                <div class="flex-col">
+                    <div class="sub-header"></div>
+                    <div class="main-content">
+                        <div class="circle">6</div>
+                    </div>
+                </div>
+                <div class="sidebar sidebar-right"></div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+
+</body>
+</html>

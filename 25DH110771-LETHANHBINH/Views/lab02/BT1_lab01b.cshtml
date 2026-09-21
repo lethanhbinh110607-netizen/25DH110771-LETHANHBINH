@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>BÀI TẬP 1 - Lab01b</title>
+</head>
+<body>
+    <div>
+        <h2>BÀI THỰC HÀNH TUẦN 01 - BÀI 1</h2>
+
+        <h3>1. Danh sách liên kết (Yêu cầu 1.3):</h3>
+        <ul>
+            <li><a href="~/th02/contact.html">Trang Contact</a></li>
+            <li><a href="~/th02/product.html">Trang Product</a></li>
+            <li><a href="~/th02/src/new.html">Trang New</a></li>
+            <li><a href="~/th02/src/sub/intro.html">Trang Intro</a></li>
+            <li><a href="~/th02/src/sub/sale.html">Trang Sale</a></li>
+        </ul>
+
+        <hr />
+
+        <h3>2. Hiển thị 2 hình ảnh (Yêu cầu 1.2):</h3>
+        <!-- Sử dụng Url.Content để trỏ thẳng vào thư mục th02/src -->
+        <img src="@Url.Content("~/th02/src/hinh01.jpg")" alt="Hình 01" width="250" />
+        <img src="@Url.Content("~/th02/src/hinh02.jpg")" alt="Hình 02" width="250" />
+    </div>
+</body>
+</html>

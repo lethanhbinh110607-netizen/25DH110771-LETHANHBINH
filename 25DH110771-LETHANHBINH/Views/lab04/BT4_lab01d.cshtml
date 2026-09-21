@@ -1,0 +1,93 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Đăng ký thông tin sinh viên</title>
+    <style>
+        
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .form-row {
+            margin-bottom: 5px;
+        }
+
+        .checkbox-group {
+            margin-left: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>NHẬP THÔNG TIN SINH VIÊN</h2>
+
+    
+    <form action="https://www.google.com" method="POST" enctype="multipart/form-data">
+
+        <div class="form-row">
+            <label>HỌ VÀ TÊN:</label>
+            <input type="text" name="hoTen">
+        </div>
+
+        <div class="form-row">
+            <label>MÃ SỐ SINH VIÊN :</label>
+            <input type="text" name="mssv">
+        </div>
+
+        <div class="form-row">
+            <label>NGÀY SINH:</label>
+            <input type="date" name="ngaySinh">
+        </div>
+
+        <div class="form-row">
+            <label>CHUYÊN NGÀNH:</label>
+            <input type="radio" name="chuyenNganh" value="CNPM" id="cnpm"> <label for="cnpm">CNPM</label>
+            <input type="radio" name="chuyenNganh" value="HTTT" id="httt"> <label for="httt">HTTT</label>
+            <input type="radio" name="chuyenNganh" value="ANM" id="anm"> <label for="anm">AN NINH MẠNG</label>
+        </div>
+
+        <div class="form-row">
+            <label>SỞ THÍCH:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" name="soThich" value="viet_code" id="vietCode"> <label for="vietCode">VIẾT CHƯƠNG TRÌNH</label><br>
+                <input type="checkbox" name="soThich" value="pt_csdl" id="ptCsdl"> <label for="ptCsdl">PHÂN TÍCH CSDL</label><br>
+                <input type="checkbox" name="soThich" value="mang" id="mang"> <label for="mang">XÂY DỰNG SƠ ĐỒ MẠNG</label>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <label>MÀU SẮC YÊU THÍCH:</label>
+            <input type="color" name="mauSac">
+        </div>
+
+        <div class="form-row">
+            <label>HÌNH ĐẠI DIỆN:</label>
+            <input type="file" name="hinhDaiDien">
+        </div>
+
+        <div class="form-row">
+            <label>TÊN ĐĂNG NHẬP WEB TRƯỜNG:</label>
+            <input type="text" name="username">
+        </div>
+
+        <div class="form-row">
+            <label>MẬT KHẨU ĐĂNG NHẬP WEB TRƯỜNG:</label>
+           
+            <input type="password" name="password" value="1234567890">
+        </div>
+
+        <br>
+        <div class="form-row">
+            <input type="submit" value="Gửi dữ liệu về máy chủ">
+        </div>
+
+    </form>
+
+</body>
+</html>

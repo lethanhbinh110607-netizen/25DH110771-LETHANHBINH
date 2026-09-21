@@ -1,0 +1,53 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lấy lại mật khẩu</title>
+    <style>
+        
+        fieldset {
+            width: 320px;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <form action="https://www.google.com" method="POST">
+        <fieldset>
+            <legend>Lấy lại mật khẩu</legend>
+
+            <p>
+                <label for="mssv">Mã số sinh viên:</label><br>
+                <input type="text" id="mssv" name="mssv" value="25dhxxxxx">
+            </p>
+
+            <p>
+                <label for="old_password">Mật khẩu cũ:</label><br>
+                <input type="password" id="old_password" name="old_password">
+            </p>
+
+            <p>
+                <label for="new_password">Mật khẩu mới:</label><br>
+                <input type="password" id="new_password" name="new_password">
+            </p>
+
+            <p>
+                <label for="renew_password">Nhập lại Mật khẩu mới:</label><br>
+                <input type="password" id="renew_password" name="renew_password">
+            </p>
+
+            <p>
+                <input type="submit" value="Lưu lại">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+</html>
